@@ -38,7 +38,7 @@ classdef SparseND
 % by Anton Ovcharenko
 % Stanford University, 2021
 
-    properties (Access = public)
+    properties (Access = private)
         sz (1,:) {mustBeInteger, mustBeNonnegative} % size vector of the tensor
         ind (:,1) {mustBeInteger, mustBePositive} % linear indicies vector of non-zero elements' locations
         data (:,1) {mustBeNumericOrLogical} % values in the corresponding slots, according to ind
