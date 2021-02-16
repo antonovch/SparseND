@@ -307,6 +307,8 @@ for n = 1:numTests
 end
 
 %%
+fprintf('No errors encountered! Ready to use SparseND!\n')
+%%
 
 function tf = isequal(a,b)
     ia = isnan(a);
